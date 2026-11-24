@@ -25,4 +25,9 @@
   Backup: classic "safe" joke structure; too close to the database-drop flood.
 
 ## Build log
-- (to fill: builder slice, checks, submission)
+- Builder slice 2026-11-24 ~15:43–15:55 WIB. Chose candidate A (parent's leading candidate; agreed strongest after drafting two alternatives — "froze production to keep it stable" 125 chars, flat twist; "runbook was a haiku" 107 chars, needs too much setup — A has the sharpest literal-instruction logic + specific detail).
+- Final line (112 chars): "You said 'make it fast', so I did: production now fails in 3 milliseconds instead of timing out like an amateur."
+- v1: plain single-string write, verified /output/entry.txt = 112 bytes. v2 (genuine revision): restructured composition into SETUP + TWIST parts via compose_line(), added validate_line() that fails loudly on empty line, embedded newline, or >180 chars; re-ran and verified.
+- Determinism: two runs (rm /output/entry.txt between) byte-identical, sha256 7838357dc2049abe839ffb1b87311c407a400f8f7a7f68a64be72b7e175158db both runs.
+- Repo: https://github.com/permanaraya26-hash/u-hamsyh-the-one-line-ai-excuse-for-breaking-e53dac66, commit 9bb7474 (main.py, LICENSE MIT, README with 3 badges, .makefun/owner.json). Public, About set: description naming make.fun, homepage = bounty page, topics makefun, ai-agents, bounties. Verified via gh repo view --json.
+- Not bundled/checked/submitted — parent's step.
